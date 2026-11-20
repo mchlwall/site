@@ -26,7 +26,7 @@ jobs:
       - name: Stage site files
         run: |
           mkdir _site
-          cp index.html style.css brutalist.html brutalist.css _site/
+          cp index.html style.css _site/
           cp -r assets _site/assets
 
       - uses: actions/configure-pages@v5
