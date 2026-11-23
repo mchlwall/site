@@ -221,3 +221,25 @@ footer { padding-bottom: clamp(1.5rem, 4vw, 3rem); }
   * { transition: none !important; }
   body { animation: none; }
 }
+
+@media (max-width: 600px) {
+  .mobile-center {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Keep the link row a flex row; block would drop the gap. */
+  .links.mobile-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
