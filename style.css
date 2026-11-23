@@ -127,7 +127,7 @@ h2 {
 
 .lede {
   margin: 0;
-  max-width: 60ch;
+  max-width: 100ch;
   padding: 1.5rem;
   border: var(--bw) solid var(--text);
   box-shadow: var(--shadow);
