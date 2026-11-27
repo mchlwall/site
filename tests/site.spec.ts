@@ -1,8 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://mchlwall.github.io/site/');
+test('has page elements', async ({ page }) => {
+  await page.goto('/site');
 
-  // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Michael Wall/);
+  // await expect(page.getByRole('img', { name: 'Test and Deploy' })).toBeVisible();
+  // await page.getByRole('link', { name: 'mailto:mchlwall@gmail.com' }).scrollIntoViewIfNeeded();
+  // await page.getByTestId('email-link').scrollIntoViewIfNeeded();
+  await page.getByTestId('email-link').click();
 });
